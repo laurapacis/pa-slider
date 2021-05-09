@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Indicator from './Indicator';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { ImageDescriptions } from './ImageDescriptions';
 
 const ImageSlider = ({
@@ -15,41 +14,37 @@ const ImageSlider = ({
   const [currentSlide, setCurrentSlide] = useState(0);
   const length = images.length;
 
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
-  };
+  const nextSlide = (slideIndex = currentSlide + 1) => {
+    const newSlideIndex = slideIndex >= length ? 0 : slideIndex;
+    setCurrentSlide(newSlideIndex);
+  }
 
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
-  };
+  const prevSlide = (slideIndex = currentSlide - 1) => {
+    const newSlideIndex = slideIndex >= length ? 0 : slideIndex;
+    setCurrentSlide(newSlideIndex);
+  }
 
   useEffect(() => {
-      const timer = setTimeout(() => {
-        nextSlide();
-      }, autoPlayTime);
-
-      return () => clearTimeout(timer);
-      // eslint-disable-next-line
+    const timer = setTimeout(() => {
+      nextSlide();
+    }, autoPlayTime);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line
   }, [currentSlide]);
-    
 
-  if (!Array.isArray(images) || images.length <= 0) {
+  if (!Array.isArray(images) || length <= 0) {
     return null;
   }
 
   return (
     <>
-      <FaArrowAltCircleLeft className='arrow-left'
-        onClick={prevSlide}
-      />
+      <div className='arrow-left' onClick={() => prevSlide()}></div>
 
-      <FaArrowAltCircleRight className='arrow-right'
-        onClick={nextSlide}
-      />
+      <div className='arrow-right' onClick={() => nextSlide()}></div>
 
-      <div className='wrapper' {...props}>
+      <div className='image-wrapper' {...props}>
         {images.map((imageUrl, index) => (
-          <div className='slide'
+          <div className='image-slide'
             key={index}
             style={{
               backgroundImage: `url(${imageUrl})`,
@@ -61,22 +56,22 @@ const ImageSlider = ({
 
       <div className='text-wrapper' {...props}>
         {ImageDescriptions.map((item, index) => (
-          <ul className='text-slide'
+          <div className='text-slide'
             key={index}
             style={{
               color: 'white',
               marginLeft: index === 0 ? `-${currentSlide * 100}%` : undefined,
             }}
           >
-            <li>{item.title}</li>
-            <li>{item.label}</li>
-          </ul>
+            <h3>{item.title}</h3>
+            <h3>{item.label}</h3>
+          </div>
         ))}
       </div>
       
       <Indicator
         currentSlide={currentSlide}
-        amountSlides={images.length}
+        amountSlides={length}
         nextSlide={nextSlide}
       />
     </>
