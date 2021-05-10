@@ -4,7 +4,7 @@ export const ImageDescriptions = [
         label: 'LIMITED EDITION 2D',
     },
      {
-        title: '2 Laserjet Print Onto Canvas',
+        title: 'Tridimensional Puzzle: Kengo Kuma & Geoff Nees Tessellate a Botanical Pavilion',
         label: 'LIMITED EDITION 2D'
     },
       {

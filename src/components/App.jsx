@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title from './Title';
+// import Title from './Title';
 import Slider from './Slider';
 
 import image1 from '../assets/image-1.jpeg';
@@ -14,7 +14,6 @@ import '../App.css';
 const App = () => {
   return (
     <>
-      <Title />
       <div className="sliders">
         <Slider images={[image1, image2, image3, image4, image5]} />
       </div>
