@@ -10,7 +10,7 @@ const Indicator = ({ currentSlide, amountSlides, nextSlide }) => {
                     <div className='square'
                         key={i}
                         isActive={currentSlide === i}
-                        style={{backgroundColor: currentSlide === i ? '#58bab8' : 'chartreuse'}}
+                        style={{backgroundColor: currentSlide === i ? '#371e07' : '#d7d3c8'}}
                         onClick={() => nextSlide(i)}
                     ></div>
                 ))}

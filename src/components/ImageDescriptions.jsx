@@ -1,22 +1,22 @@
 export const ImageDescriptions = [
      {
-        title: 'COLANI 2D',
-        label: 'LIMITED EDITION 2D',
+        title: 'Steampunk Pavilion',
+        label: 'Gwyllim Jahn & Cameron Newnham + Soomeen Hahm Design + Igor Pantic',
     },
      {
-        title: 'Tridimensional Puzzle: Kengo Kuma & Geoff Nees Tessellate a Botanical Pavilion',
-        label: 'LIMITED EDITION 2D'
+        title: 'Park Harumi Pavilion',
+        label: 'Kengo Kuma + Geoff Nees'
     },
       {
-        title: '3',
-        label: 'LIMITED EDITION 2D'
+        title: 'Eco-Parametric Structures',
+        label: 'Studio Mamou-Mani / Scott Duillet + Luiz Felipe Silveira'
     },
        {
-        title: '4',
-        label: 'LIMITED EDITION 2D'
+        title: 'Mill River Carousel Pavilion',
+        label: 'WT/GO Architecture'
     },
        {
-        title: '5',
-        label: 'LIMITED EDITION 2D'
+        title: 'Gallery of Tij Observatory',
+        label: 'RAU architects + RO&AD Architecten'
     },
 ]

@@ -63,8 +63,8 @@ const ImageSlider = ({
               marginLeft: index === 0 ? `-${currentSlide * 100}%` : undefined,
             }}
           >
-            <h3>{item.title}</h3>
-            <h3>{item.label}</h3>
+            <h3 className='item-title'>{item.title}</h3>
+            <h3 className='item-label'>{item.label}</h3>
           </div>
         ))}
       </div>
