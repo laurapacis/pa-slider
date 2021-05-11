@@ -44,10 +44,6 @@ With a longer deadline I would have developed:
 - Better design of the navigation arrows on desktop view.
 - Swipe navigation of slides triggered by touch on mobile.
 
-## Personal level of satisfaction
-
-7/10
-
 ## Final thoughts
 
 This was an exciting project where I learned to make something that I see daily on the Internet, sliders! Therefore it was exciting and interesting. I also improved my management skills and discovered that I enjoy working under pressure since it allows me to hyperfocus and pushes myself out of the limits of my comfort zone.
