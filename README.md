@@ -4,7 +4,7 @@ The project is an example of a slider element with two sub-sliders: one image sl
 
 ## Stack
 
-Built with React.js and styled with CSS.
+Built with React.js and styled with CSS. Deployed with Vercel.
 
 ## Development time
 
@@ -50,4 +50,4 @@ With a longer deadline I would have developed:
 
 ## Final thoughts
 
-This was an exciting project where I learnt to make something that I see daily in the Internet, sliders! Therefore it was exciting and interesting. I also improved my personal management skills and discovered that I enjoy working under pressure, since it allows me to hyperfocus and push myself out of the limits of my confort zone.
+This was an exciting project where I learned to make something that I see daily on the Internet, sliders! Therefore it was exciting and interesting. I also improved my management skills and discovered that I enjoy working under pressure since it allows me to hyperfocus and pushes myself out of the limits of my comfort zone.
