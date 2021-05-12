@@ -1,3 +1,5 @@
+### [https://pa-slider.vercel.app/](https://pa-slider.vercel.app/)
+
 ## About
 
 The project is an example of a slider element with two sub-sliders: one image slider and one text slider.
