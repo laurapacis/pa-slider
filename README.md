@@ -31,7 +31,7 @@ The project is tested in:
 
 I decided to go for a professional and formal style, choosing a topic that fascinates and inspires me: [computational design in parametric architecture](https://www.autodesk.com/products/fusion-360/blog/parametric-design-architecture-shaping-industry/).
 
-## My approach
+## Approach
 
 I focused on punctual delivery and [quality for the images over speed of the website](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fpa-slider.vercel.app%2F&tab=mobile).
 
