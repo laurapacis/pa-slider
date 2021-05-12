@@ -10,7 +10,7 @@ Built with React.js and styled with CSS. Deployed with Vercel.
 
 approx. 2 days of work.
 
-## Aspects I focused:
+## Aspects I focused on:
 
 #### Interaction
 
